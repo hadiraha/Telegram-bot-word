@@ -4,7 +4,7 @@ from Telegramconn import TelegramBot
 
 async def main():
     # Path to the Word document
-    file_path = r'wordfile\20241222 اروپایی آمریکایی.dox.cleaned.docx'  # Update this to the actual file path
+    file_path = r'file path'  # Update this to the actual file path
 
     # Step 1: Extract content from the Word document
     print("Extracting content from the Word document...")

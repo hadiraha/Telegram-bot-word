@@ -13,6 +13,7 @@ Fully customizable for different use cases.
 
 **Requirements**
 Python 3.8+
+
   Libraries:
     python-docx
     python-telegram-bot

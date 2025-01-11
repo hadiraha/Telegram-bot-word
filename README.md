@@ -19,4 +19,31 @@ Python 3.8+
     python-telegram-bot
     dotenv
     
+**Installation:**
 
+Clone this repository:
+git clone https://github.com/yourusername/word-to-telegram.git
+cd word-to-telegram
+
+Install dependencies:
+pip install -r requirements.txt
+
+Create a .env file with your Telegram bot token and chat ID:
+TELEGRAM_API_TOKEN=your_bot_token
+TELEGRAM_CHAT_ID=your_chat_id
+
+**Usage**
+-Run the script:
+python main.py
+
+-Provide the path to the Word document when prompted.
+
+Let me know if you need any changes or further additions!
+
+
+
+
+
+
+
+  

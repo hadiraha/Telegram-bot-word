@@ -12,10 +12,10 @@ class DocxParser:
 
 
     def extract_headings_content(self):
-        """
-        Extract content under Heading 4 and return it in a list.
-        Handles cases where Heading 4 has no text and ensures sections without content are skipped.
-        """
+        
+        # Extract content under Heading 4 and return it in a list.
+        # Handles cases where Heading 4 has no text and ensures sections without content are skipped.
+        
         content = []
         current_content = None
         collecting = False  # Flag to indicate we are collecting content under a Heading 4
@@ -87,7 +87,7 @@ class DocxParser:
 
 # Testing the extraction process
 # if __name__ == "__main__":
-#     file_path = 'wordfile\مواضع عربی 20250106.cleaned.docx'  # Change this to your file path
+#     file_path = ''  # Change this to your file path
 #     try:
 #         docx_parser = DocxParser(file_path)
 #         extracted_content = docx_parser.extract_headings_content()

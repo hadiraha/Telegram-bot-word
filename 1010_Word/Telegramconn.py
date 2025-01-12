@@ -16,16 +16,16 @@ class TelegramBot:
         self.bot = Bot(token=self.token)
 
     async def send_message(self, text):
-        """
-        Sends a message to the specified Telegram chat or channel.
-        """
+        
+        #Sends a message to the specified Telegram chat or channel.
+        
         await self.bot.send_message(chat_id=self.chat_id, text=text)
         
     async def send_batch_messages(self, messages, batch_size=5, delay=1):
-        """
-        Sends messages in batches to avoid spamming too many messages.
-        Introduces a delay between messages and handles flood control.
-        """
+        
+        # Sends messages in batches to avoid spamming too many messages.
+        # Introduces a delay between messages and handles flood control.
+        
         for i in range(0, len(messages), batch_size):
             batch = messages[i:i+batch_size]
             for message in batch:

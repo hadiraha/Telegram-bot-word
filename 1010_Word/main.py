@@ -1,6 +1,7 @@
 import asyncio
 from docxParser import DocxParser
 from Telegramconn import TelegramBot
+from Baleconn import BaleBot
 
 async def main():
     # Path to the Word document
@@ -28,6 +29,17 @@ async def main():
         print("All content sent successfully!")
     except Exception as e:
         print(f"Error sending messages to Telegram: {e}")
+
+    # Step 3: Send content to Bale
+    print("Sending content to Bale...")
+    try:
+        bale_bot = BaleBot()
+        await bale_bot.send_batch_messages(content, batch_size=5, delay=1)  # Add a 1-second delay
+        print("All content sent successfully to Bale!")
+    except Exception as e:
+        print(f"Error sending messages to Bale: {e}")
+
+
 
 if __name__ == "__main__":
     asyncio.run(main())

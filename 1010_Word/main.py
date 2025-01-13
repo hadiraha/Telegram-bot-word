@@ -21,14 +21,14 @@ async def main():
         print(f"Error extracting content: {e}")
         return
 
-    # Step 2: Send content to Telegram
-    print("Sending content to Telegram...")
-    try:
-        bot = TelegramBot()
-        await bot.send_batch_messages(content, batch_size=5, delay=1)  # Add a 1-second delay
-        print("All content sent successfully!")
-    except Exception as e:
-        print(f"Error sending messages to Telegram: {e}")
+    # # Step 2: Send content to Telegram
+    # print("Sending content to Telegram...")
+    # try:
+    #     bot = TelegramBot()
+    #     await bot.send_batch_messages(content, batch_size=5, delay=1)  # Add a 1-second delay
+    #     print("All content sent successfully!")
+    # except Exception as e:
+    #     print(f"Error sending messages to Telegram: {e}")
 
     # Step 3: Send content to Bale
     print("Sending content to Bale...")

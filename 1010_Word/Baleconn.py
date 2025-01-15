@@ -22,12 +22,6 @@ class BaleBot:
         async with self.client as bot:
             await bot.send_message(chat_id=self.chat_id, text=text ) 
 
-
-    # async def sending_messages(self, text):
-        
-    #     #Sends a message to the specified Telegram chat or channel.
-        
-    #     await self.bot.send_message(chat_id=self.chat_id, text=text)
         
         
     async def send_batch_messages(self, messages, batch_size=5, delay=1):
